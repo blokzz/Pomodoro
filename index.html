@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/3095e1babe.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+  <main>
+  <div id="modal">
+    <div class="modal-content">
+      <div id="settings-section">
+        <h4>Settings</h4>
+      <div>
+      <span>minutes: </span>
+      <input id="min" type="number" value="15" min="0" max="500"><br>
+      </div>
+      <div>
+      <span>seconds:</span>
+      <input id="sec" type="number" value="0" name="number" min="0" max="59"><br>
+      </div>
+      <div>
+      <span>Background color:</span>
+      <input id="bg-color" type="color">
+     </div>
+      <button id="save-btn">Save</button>
+       </div>
+       <div id="task-section">
+        <h4>Enter task name:</h4>
+        <input type="text" name="taskName" id="task">
+        <button id="save-task">Add task</button>
+    </div>
+  </div>
+    </div>
+  <div class="timer-container">
+    <div class="settings"><button><i class="fa-solid fa-gear"></i></button></div>
+    <div class="Modes">
+      <div class="workout" id="pom">Pomodoro</div>
+      <div class="workout" id="short-break">Short Break</div>
+      <div class="workout" id="long-break">Long Break</div>
+    </div>
+    <div class="content">
+      <span class="timer">15:00</span>
+      <button class="start-btn">Start</button>
+    </div>
+    <div class="addtask"><button><i class="fa-solid fa-plus"></i></button></div>
+  </div>
+
+  <div id="task-container">
+
+  </div>
+   </main>
+    <script src="app.js"></script>
+</body>
+</html>
