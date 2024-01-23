@@ -76,6 +76,8 @@ window.addEventListener('DOMContentLoaded', () => {
 
 const toggleactiveMode = (mode, duration , bgcolor) => {
   clearInterval(countdowntimer);
+  statuse='start';
+  start.textContent = 'start'
   let minutes = Math.floor(duration / 60);
   let seconds = (duration % 60).toString().padStart(2, '0');
   timer.textContent = `${minutes}:${seconds}`;
